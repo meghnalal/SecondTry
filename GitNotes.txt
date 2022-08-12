@@ -1,0 +1,9 @@
+Create Repo --->
+                git init
+                git add .
+                git status 
+                git commit -m "comments"
+                it remote add origin https://github.com/meghnalal/First_Project.git
+Create a Branch --->
+                git branch
+                git checkout mynewbranch     
