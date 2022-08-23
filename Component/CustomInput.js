@@ -19,7 +19,7 @@ const CustomInput =({
             name={name}
             rules={rules}
             render={({field:{value, onChange,onBlur},fieldState:{error}}) => ( 
-               <View > 
+               
                <TextInput 
                 value={value}
                 onChangeText={onChange} 
@@ -28,7 +28,7 @@ const CustomInput =({
                 style={[styles.Input, {borderColor: error ? 'red':'black'}]} //to seee input style need to put in here 
                 secureTextEntry={secureTextEntry}
                  />
-             </View>
+             
             )}
             />
     
