@@ -2,7 +2,6 @@
 // get the input of daily expenses and list them below
 // do calculation with those expenses and categorize them 
 
-
 import React, { Component } from 'react';
 import {useState} from 'react';
 import { View,StyleSheet,Text,Image,TextInput,FlatList} from 'react-native';
@@ -11,6 +10,9 @@ import style from 'react-native-datepicker/style';
 
 const Input = (props,{navigate}) => {
   const[money,Setmoney]= useState('');
+  // event is when press enter 
+  // need to update my list 
+  //need to update my total expenses 
 
     return (
       // Try setting `flexDirection` to `column`.
@@ -54,8 +56,7 @@ const styles = StyleSheet.create({
         alignItems:'center', //alignes horizontally 
         justifyContent: 'space-around',
         marginTop:100,
-       
-  },
+       },
   Text:{
     borderWidth:1.5,
     borderColor: "black",
