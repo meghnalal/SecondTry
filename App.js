@@ -14,6 +14,15 @@ import Income from './Component/AddTransection'
 import AddTransactionScreen from './Component/AddTransection';
 import Spent from './Component/Spent';
 import FlatList from'./Component/FlatList';
+import ButtonError from './Component/ButtonError'
+import ButtonLog from './Component/Button';
+import ButtonErrorcopy from './Component/ButtonErrorcopy'
+import Font1 from './Component/Font1'
+import AddInput from'./Component/AddTodo'
+import AddTodoMeg from './Component/AddTodoMeg'
+import Flatlistmeg from './Component/Flatlistmeg';
+
+
 const Stack = createNativeStackNavigator(); 
 
 const MyStack = () => {
@@ -25,7 +34,7 @@ const MyStack = () => {
           <Stack.Screen
                 name="Home"component={Button}/>
           <Stack.Screen 
-                name="SignIn" component={FlatList} />
+                name="SignIn" component={Flatlistmeg} />
           <Stack.Screen
                 name="MainPage" component={AddTransactionScreen}/>
           <Stack.Screen

@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   },
   Text :{
    
-        justifyContent: 'center',
+      justifyContent: 'center',
         alignItems: 'center',
     backgroundColor: 'green',
   },

@@ -2,13 +2,11 @@
 
 import React, { useState } from "react";
 import { View, Button, StyleSheet, FlatList,Text ,TextInput,ScrollView} from "react-native";
-import AddTodo from './AddTodo'
+import AddTodoMeg from './AddTodoMeg'
 
-const AddInput=() => {
+const Flatlistmeg=() => {
   const[expense,setExpense]= useState([
-    {text: 'weed',key:'1'},
-    {text: 'food',key:'2'},
-    {text: 'drink',key:'3'}
+    
   ]);
   
   const submitHandler =(text) =>{
@@ -22,7 +20,7 @@ const AddInput=() => {
   }
   return(
     <View style={styles.container}>
-      <AddTodo submitHandler={submitHandler}/>
+      <AddTodoMeg submitHandler={submitHandler}/>
       <ScrollView>
       <FlatList
       data={expense} 
@@ -60,4 +58,4 @@ const AddInput=() => {
       },
     
     })
-    export default AddInput;
+    export default Flatlistmeg;
