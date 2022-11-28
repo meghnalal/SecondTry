@@ -7,8 +7,20 @@ import React, { useState } from 'react';
 import SignIn from './Component/SignIn';
 import SignIn2 from './Component/SignIn2';
 import MainPage from './Component/MainPage';
+import DatePicker from './Component/DatePicker';
 import { NavigationContainer, TabActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Income from './Component/AddTransection'
+import AddTransactionScreen from './Component/AddTransection';
+import Spent from './Component/Spent';
+import FlatList from'./Component/FlatList';
+import ButtonError from './Component/ButtonError'
+import ButtonLog from './Component/Button';
+import ButtonErrorcopy from './Component/ButtonErrorcopy'
+import Font1 from './Component/Font1'
+import AddInput from'./Component/AddTodo'
+import AddTodoMeg from './Component/AddTodoMeg'
+import Flatlistmeg from './Component/Flatlistmeg';
 
 
 const Stack = createNativeStackNavigator(); 
@@ -22,9 +34,11 @@ const MyStack = () => {
           <Stack.Screen
                 name="Home"component={Button}/>
           <Stack.Screen 
-                name="SignIn" component={SignIn} />
+                name="SignIn" component={Flatlistmeg} />
           <Stack.Screen
-                name="MainPage" component={MainPage}/>
+                name="MainPage" component={AddTransactionScreen}/>
+          <Stack.Screen
+                name="Income" component={AddTransactionScreen}/>
          </Stack.Navigator>
         </NavigationContainer>
     
