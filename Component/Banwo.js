@@ -6,8 +6,8 @@ import { profile } from './data';
 import { setStatusBarNetworkActivityIndicatorVisible } from 'expo-status-bar';
 
 
-
 const Banwo=() => {
+
   const[input,setInput]=useState('')
   const [listinput, setlistofinput] = useState([ ]);
   const [heading,setHeading]= useState(false)
@@ -22,15 +22,15 @@ const Banwo=() => {
 
   const submitHandler = (text) => {
     const arr = [
-      {name: text, type:input },
-      
-    ];
+      {name: text, type:input }, //
+       ];
+
     setMyArr([...myArr, ...arr]);
     console.log(myArr)
      }
 
   const changeHandler = (val) => {
-    setInput(val)
+    setInput(val) //uses the val input and sets it as setInput
     
     }
                       const submitHandler1 = (text) => {
@@ -45,7 +45,10 @@ const Banwo=() => {
       <TouchableOpacity style={styles.categories} 
       onPress={()=>{submitHandler(item.heading)
       setstore(item.heading)
-      setHeading(true)}}>
+      setHeading(true)
+      // if the icon is pressed the item heading goes as text in in the array 
+      //also setting the heading true
+    }}>
         <View >
             <Image source={item.img} style={styles.img}/>
         </View>
@@ -68,27 +71,40 @@ const Banwo=() => {
     <LinearGradient colors = {['white', 'teal']} style={styles.container} >
       <TextInput
       placeholder={'enter'}
-      value={input}
-      onChangeText={changeHandler}/> 
+      value={input} //value get stored input
+      onChangeText={changeHandler} 
+      //onchangeText i store the input in setInput 
+      />  
 
       <Button 
       title="Press me"
-      onPress={()=>submitHandler(input)}/> 
+      onPress={()=>submitHandler(input)} 
+      //when the button is pressed uses the value of input and adds it to the array 
+      //Input becomes text and get displayed 
+      // picks previews array and add new array 
+      /> 
 
       <FlatList
       horizontal={true}
       data={profile}
-      renderItem={imgrender}/>
+      renderItem={imgrender}
+      // rendering the data.js
+      />
+
       <ScrollView >
       {
         myArr.map((item) => (
           //<Text>text={item.name} {item.type}</Text>
+          //maps the myArr in text or Task
           <View>
-          <Task1 name={item.name} type={item.type}/>
+          <Task1 name={item.name} type={item.type}
+          // giving the name and the type as input
+          />
           </View>
         ))
       }
       </ScrollView>
+
       <ScrollView >
           {
             listinput.map((item,index) => 

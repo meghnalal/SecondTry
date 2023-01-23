@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import { useFonts } from 'expo-font';
+//import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 
 export default function Font1() {

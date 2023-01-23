@@ -15,6 +15,7 @@ import AddTodoMegFlatlist from './Component/AddTodoMegFlatlist';
 import FlatlistTutorial from './Component/FlatlistTutorial';
 import FlatlistTutorialrefined from './Component/FlatlistTutorialrefined';
 import Banwo  from './Component/Banwo';
+import Calculations from './Component/Calculations';
 
 
 
@@ -29,7 +30,7 @@ const MyStack = () => {
           <Stack.Screen
                 name="Home"component={Button}/>
           <Stack.Screen 
-                name="SignIn" component={Banwo} />
+                name="SignIn" component={Calculations} />
           <Stack.Screen
                 name="MainPage" component={AddTodoMeg}/>
           <Stack.Screen
