@@ -17,7 +17,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { profile } from "./data";
 import { PieChart } from "react-native-chart-kit";
 
-const Modaltry = () => {
+const ModalBanwo = () => {
   const [text, settext] = useState("");
   const [description, setDescription] = useState("");
   const [descriptions, setDescriptions] = useState([]);
@@ -215,4 +215,4 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
 });
-export default Modaltry;
+export default ModalBanwo;

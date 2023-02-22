@@ -17,6 +17,7 @@ import FlatlistTutorialrefined from './Component/FlatlistTutorialrefined';
 import Banwo  from './Component/Banwo';
 import Calculations from './Component/Calculations';
 import Modaltry from './Component/Modal';
+import ModalBanwo from './Component/ModalForBanwoReview';
 
 
 
@@ -31,7 +32,7 @@ const MyStack = () => {
           <Stack.Screen
                 name="Home"component={Button}/>
           <Stack.Screen 
-                name="SignIn" component={Modaltry} />
+                name="SignIn" component={ModalBanwo} />
           <Stack.Screen
                 name="MainPage" component={AddTodoMeg}/>
           <Stack.Screen
