@@ -64,8 +64,6 @@ const styles = StyleSheet.create({
         width: "70%", //why is it changing input size ?
         position:"absolute",
         justifyContent:'flex-end'
-        
-        
 
       }
     })
