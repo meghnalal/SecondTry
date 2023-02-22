@@ -1,9 +1,15 @@
-Create Repo --->
+Create Repo ---->
+
                 git init
                 git add .
                 git status 
                 git commit -m "comments"
-                it remote add origin https://github.com/meghnalal/First_Project.git
+                git remote add origin https://github.com/meghnalal/First_Project.git
+                git push -u origin main
 Create a Branch --->
                 git branch
-                git checkout mynewbranch     
+                git checkout -b mynewbranch   
+Push a Branch   --->
+                git push  <REMOTENAME> <BRANCHNAME> 
+                git push origin newbranch
+Pull Request   --->
